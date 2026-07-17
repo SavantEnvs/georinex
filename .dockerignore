@@ -1,0 +1,7 @@
+# Keep .git (full mayhem-branch history is baked into the commit image — SPEC §6.2 item 2).
+# Prune only local build scratch that would bloat the build context.
+**/__pycache__/
+**/*.pyc
+*.egg-info/
+build/
+dist/

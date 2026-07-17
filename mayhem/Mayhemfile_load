@@ -1,0 +1,11 @@
+project: savantenvs/georinex
+target: parse-load
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/parse-load/testsuite
+
+cmds:
+  - cmd: /mayhem/parse-load
+    libfuzzer: true
+    timeout: 25
